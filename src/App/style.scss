@@ -1,0 +1,12 @@
+@import url('https://cdn.rawgit.com/mfd/e7842774e037edf15919037594a79b2b/raw/665bdfc532094318449f1010323c84013d5af953/graphik.css');
+@import 'variables.scss';
+
+html, body {
+    color: #{map-get($logo, 'text-color')};
+    font-family: #{map-get($logo, 'font-family')};
+    font-size: #{map-get($body, 'font-size')};
+    max-width: 1920px;
+    width: 100%;
+    background-color: #{map-get($body, 'bg')};
+    position: relative;
+}

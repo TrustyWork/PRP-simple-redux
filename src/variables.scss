@@ -1,0 +1,11 @@
+$logo: (
+  color: #4385dc,
+  text-color: #4f4f4f,
+  font-family: 'Graphik, serif',
+);
+
+$body: (
+  color: map-get($logo, 'text-color'),
+  font-size: 14px,
+  bg: #fdfdfd,
+);

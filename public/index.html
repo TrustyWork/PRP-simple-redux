@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+      #preload {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #preload .logo {
+        width: 5vmin;
+        height: 5vmin;
+        position: relative;
+        transform: scale(2);
+      }
+      #preload .logo div {
+        width: 1.8vmin;
+        height: 1.8vmin;
+        background-color: #4385dc;
+        position: absolute;
+        box-sizing: border-box;
+        animation: blink 2s infinite;
+      }
+      #preload .logo div:nth-child(1) {
+        top:0;
+        left: 0;
+        animation-delay: 0;
+      }
+      #preload .logo div:nth-child(2) {
+        top:0;
+        right: 0;
+        animation-delay: 0.5s;
+      }
+      #preload .logo div:nth-child(3) {
+        bottom:0;
+        right: 0;
+        animation-delay: 1s;
+      }
+      #preload .logo div:nth-child(4) {
+        bottom:0;
+        padding-left: 0;
+        animation-delay: 1.5s;
+      }
+      @keyframes blink {
+        0% {
+          opacity: 0.2;
+        }
+        25% {
+          opacity: 1;
+        }
+        26% {
+          opacity: 0.2;
+        }
+        100% {
+          opacity: 0.2;
+        }
+      }
+    </style>
+</head>
+<body>
+    <div id="rm-root">
+      <div id="preload">
+        <div class="logo">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
